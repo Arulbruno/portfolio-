@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+  
+*{
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+span{
+    line-height: 60px;
+    color: yellowgreen;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+.nav ul{
+     float: right;
+     
+     margin-right: 5px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 60px;
+}
+#hardik:hover{
+    box-shadow: 0 0 5px rgb(10, 161, 46),0 0 25px rgb(5, 172, 66),0 0 50px rgb(17, 220, 58),0 0 100px rgb(32, 166, 8),0 0 200px rgb(0, 255, 26);
+}
+.nav ul li a{
+    color: whitesmoke;
+    padding: 5px 5px;
+}
+.nav ul li a:hover{
+     color: greenyellow;
+     background-color: rgba(red, green, blue, alpha);
+     border-bottom: 2px solid greenyellow;
+}
+@media(max-width:513px){
+  nav ul button {
+  color: var(--text-color);
+  cursor: pointer;
+  width: 50px;
+  margin-right: 40px;
+}
+  nav {
+  width: 40%;
+}
+ nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav ul li{
+    background-color: black;
+    
+}
+.nav ul li{
+    color: greenyellow;
+}
+.nav ul li a{
+    border: none;
+}
+}
+@media(max-width:768px)
+{
+    .nav ul{
+        position: fixed;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background-color: blue;
+         text-align: center;
+         padding: 0;
+         top: 50px;
+         left:-100%;
+         transition: 2s;
+    }
+    nav ul.slide{
+        left: 0;
+        transition: 2s;
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li a{
+        border: none;
+        color: black;
+    }
+    .nav ul li:hover{
+        background-color: black;
+        
+    }
+    .nav ul li:hover a{
+        color: greenyellow;
+    }
+    .nav ul li a:hover{
+        border: none;
+    }
+    
+ 
+
+
+    .humberger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+        
+        }
+    .humberger .line{
+        width: 15px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+/**Inside**/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  font-family: "Robot Mono", sans-serif;
+  background-color: #333;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 50px;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  margin-bottom: -50px;
+  margin-left: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul button {
+  color: var(--text-color);
+  cursor: pointer;
+  width: 70px;
+}
+
+.cursor {
+    font-size: larger;
+  font-weight: 100;
+  animation: blink 1s step-end infinite;
+}
+
+/* add this after adding winbox */
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
+main ul{
+    align-items: center;
+    display: inline-block;
+    line-height: 50px;
+    padding: 80px;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--text-color);
+  }
+}
+
